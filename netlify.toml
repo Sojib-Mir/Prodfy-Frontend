@@ -1,0 +1,9 @@
+# netlify.toml
+
+# Netlify Next.js Runtime/Plugin ব্যবহারের জন্য
+[build]
+  publish = ".next"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
