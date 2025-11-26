@@ -33,7 +33,7 @@ export default function Register() {
         const formData = new FormData();
         formData.append("image", profileImg);
 
-        const img_API_URL = `https://api.imgbb.com/1/upload?key=a3add781e3706419235e4e29b105fcec`;
+        const img_API_URL = `https://api.imgbb.com/1/upload?key=${process.env.NEXT_PUBLIC_img_imgbb_key}`;
         const imgRes = await axios.post(img_API_URL, formData);
 
         // 2. Profile Update Logic
