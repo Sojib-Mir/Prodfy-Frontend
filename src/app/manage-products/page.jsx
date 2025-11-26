@@ -1,10 +1,5 @@
 "use client";
 
-export const dynamic = "error";
-
-// export const dynamic = "force-dynamic"; // prevent prerender
-// export const revalidate = 0; // disable caching
-
 import React, { useEffect, useState } from "react";
 import useAuth from "@/hook/useAuth";
 import { useSearchParams } from "next/navigation";
